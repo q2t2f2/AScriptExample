@@ -1,0 +1,31 @@
+
+flashdevelop生成swc库
+分类： Lua/Javascript/Flash AS3 2012-11-22 17:18 1132人阅读 评论(1) 收藏 举报
+
+flashdevelop没有直接支持生成swc的工程，但flashdevelop生成swc也比较方便，不用任何插件。
+
+swc库是由 flexsdk的compc.exe生成的，其实我们通过这个命令行也可以直接生成swc。但还是直接在flashdevelop里F8一下，编译+生成来得方便。
+
+我先建立一个AS3 Project，取名为logic吧。
+
+1. 打开project Properties对话框，output那一页
+
+    把输出名字logic.swf改成logic.swc。
+
+2. 选择build tab页
+
+    在Post-Build Command Line加入生成swc的执行命令，注意是Post-Build，不是Pre-Build。
+
+    "$(CompilerPath)\bin\compc.exe" -include-sources "$(ProjectDir)\role" "$(ProjectDir)\item"  -compiler.library-path "$(ProjectDir)\..\..\lib\protobuf.swc" -output "$(OutputFile)"
+
+    这个命令把role和item目录下的AS代码生成swc的。-compiler.library-path, 这个是指定引用其他swc的路径。
+
+3. 关于Document-Class
+
+    经过上面两项设置，F8，会提示须要一个Document-Class，我们要的是swc，不须要程序运行入口。我们争取能不用Document-Class也能编译。
+
+    打开第一步的output那一页，把Compilation Target 从Application改成"Custom Build"。
+
+设置完后，F8，编译，接着就生成swc了。
+
+我的flashdevelop版本是：4.2.0 RTM for .NET2.0。
