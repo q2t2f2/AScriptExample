@@ -1,31 +1,31 @@
+ï»¿
+flashdevelopç”Ÿæˆswcåº“
+åˆ†ç±»ï¼š Lua/Javascript/Flash AS3 2012-11-22 17:18 1132äººé˜…è¯» è¯„è®º(1) æ”¶è— ä¸¾æŠ¥
 
-flashdevelopÉú³Éswc¿â
-·ÖÀà£º Lua/Javascript/Flash AS3 2012-11-22 17:18 1132ÈËÔÄ¶Á ÆÀÂÛ(1) ÊÕ²Ø ¾Ù±¨
+flashdevelopæ²¡æœ‰ç›´æ¥æ”¯æŒç”Ÿæˆswcçš„å·¥ç¨‹ï¼Œä½†flashdevelopç”Ÿæˆswcä¹Ÿæ¯”è¾ƒæ–¹ä¾¿ï¼Œä¸ç”¨ä»»ä½•æ’ä»¶ã€‚
 
-flashdevelopÃ»ÓĞÖ±½ÓÖ§³ÖÉú³ÉswcµÄ¹¤³Ì£¬µ«flashdevelopÉú³ÉswcÒ²±È½Ï·½±ã£¬²»ÓÃÈÎºÎ²å¼ş¡£
+swcåº“æ˜¯ç”± flexsdkçš„compc.exeç”Ÿæˆçš„ï¼Œå…¶å®æˆ‘ä»¬é€šè¿‡è¿™ä¸ªå‘½ä»¤è¡Œä¹Ÿå¯ä»¥ç›´æ¥ç”Ÿæˆswcã€‚ä½†è¿˜æ˜¯ç›´æ¥åœ¨flashdevelopé‡ŒF8ä¸€ä¸‹ï¼Œç¼–è¯‘+ç”Ÿæˆæ¥å¾—æ–¹ä¾¿ã€‚
 
-swc¿âÊÇÓÉ flexsdkµÄcompc.exeÉú³ÉµÄ£¬ÆäÊµÎÒÃÇÍ¨¹ıÕâ¸öÃüÁîĞĞÒ²¿ÉÒÔÖ±½ÓÉú³Éswc¡£µ«»¹ÊÇÖ±½ÓÔÚflashdevelopÀïF8Ò»ÏÂ£¬±àÒë+Éú³ÉÀ´µÃ·½±ã¡£
+æˆ‘å…ˆå»ºç«‹ä¸€ä¸ªAS3 Projectï¼Œå–åä¸ºlogicå§ã€‚
 
-ÎÒÏÈ½¨Á¢Ò»¸öAS3 Project£¬È¡ÃûÎªlogic°É¡£
+1. æ‰“å¼€project Propertieså¯¹è¯æ¡†ï¼Œoutputé‚£ä¸€é¡µ
 
-1. ´ò¿ªproject Properties¶Ô»°¿ò£¬outputÄÇÒ»Ò³
+    æŠŠè¾“å‡ºåå­—logic.swfæ”¹æˆlogic.swcã€‚
 
-    °ÑÊä³öÃû×Ölogic.swf¸Ä³Élogic.swc¡£
+2. é€‰æ‹©build tabé¡µ
 
-2. Ñ¡Ôñbuild tabÒ³
-
-    ÔÚPost-Build Command Line¼ÓÈëÉú³ÉswcµÄÖ´ĞĞÃüÁî£¬×¢ÒâÊÇPost-Build£¬²»ÊÇPre-Build¡£
+    åœ¨Post-Build Command LineåŠ å…¥ç”Ÿæˆswcçš„æ‰§è¡Œå‘½ä»¤ï¼Œæ³¨æ„æ˜¯Post-Buildï¼Œä¸æ˜¯Pre-Buildã€‚
 
     "$(CompilerPath)\bin\compc.exe" -include-sources "$(ProjectDir)\role" "$(ProjectDir)\item"  -compiler.library-path "$(ProjectDir)\..\..\lib\protobuf.swc" -output "$(OutputFile)"
 
-    Õâ¸öÃüÁî°ÑroleºÍitemÄ¿Â¼ÏÂµÄAS´úÂëÉú³ÉswcµÄ¡£-compiler.library-path, Õâ¸öÊÇÖ¸¶¨ÒıÓÃÆäËûswcµÄÂ·¾¶¡£
+    è¿™ä¸ªå‘½ä»¤æŠŠroleå’Œitemç›®å½•ä¸‹çš„ASä»£ç ç”Ÿæˆswcçš„ã€‚-compiler.library-path, è¿™ä¸ªæ˜¯æŒ‡å®šå¼•ç”¨å…¶ä»–swcçš„è·¯å¾„ã€‚
 
-3. ¹ØÓÚDocument-Class
+3. å…³äºDocument-Class
 
-    ¾­¹ıÉÏÃæÁ½ÏîÉèÖÃ£¬F8£¬»áÌáÊ¾ĞëÒªÒ»¸öDocument-Class£¬ÎÒÃÇÒªµÄÊÇswc£¬²»ĞëÒª³ÌĞòÔËĞĞÈë¿Ú¡£ÎÒÃÇÕùÈ¡ÄÜ²»ÓÃDocument-ClassÒ²ÄÜ±àÒë¡£
+    ç»è¿‡ä¸Šé¢ä¸¤é¡¹è®¾ç½®ï¼ŒF8ï¼Œä¼šæç¤ºé¡»è¦ä¸€ä¸ªDocument-Classï¼Œæˆ‘ä»¬è¦çš„æ˜¯swcï¼Œä¸é¡»è¦ç¨‹åºè¿è¡Œå…¥å£ã€‚æˆ‘ä»¬äº‰å–èƒ½ä¸ç”¨Document-Classä¹Ÿèƒ½ç¼–è¯‘ã€‚
 
-    ´ò¿ªµÚÒ»²½µÄoutputÄÇÒ»Ò³£¬°ÑCompilation Target ´ÓApplication¸Ä³É"Custom Build"¡£
+    æ‰“å¼€ç¬¬ä¸€æ­¥çš„outputé‚£ä¸€é¡µï¼ŒæŠŠCompilation Target ä»Applicationæ”¹æˆ"Custom Build"ã€‚
 
-ÉèÖÃÍêºó£¬F8£¬±àÒë£¬½Ó×Å¾ÍÉú³ÉswcÁË¡£
+è®¾ç½®å®Œåï¼ŒF8ï¼Œç¼–è¯‘ï¼Œæ¥ç€å°±ç”Ÿæˆswcäº†ã€‚
 
-ÎÒµÄflashdevelop°æ±¾ÊÇ£º4.2.0 RTM for .NET2.0¡£
+æˆ‘çš„flashdevelopç‰ˆæœ¬æ˜¯ï¼š4.2.0 RTM for .NET2.0ã€‚
